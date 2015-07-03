@@ -2,9 +2,11 @@
 #define CLIENT
 
 //An image is just a collection of bytes
-typedef Image char*
+typedef char* Image;
 
-int display_image(Image img);
+void draw_pixel(int x, int y, int color);
+int display_image(Image img, int width, int height);
+
 int send_screen(char* ip, int port);
 
 #endif

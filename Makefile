@@ -1,2 +1,2 @@
 buildClient:
-	gcc client.c -std=c99 -Wextra -Wall -Werror -pedantic -lX11 -lm -o client
+	gcc client.c client.h -std=c99 -Wextra -Wall -pedantic -lX11 -lm -o client
